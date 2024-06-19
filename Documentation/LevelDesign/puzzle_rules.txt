@@ -1,0 +1,17 @@
+Puzzle rules:
+- Characters can move left and right
+- Characters can jump
+	- Max horizontal: 1 block
+	- Max vertical: 1 block
+
+- Movable blocks:
+	- Block that exists on both sides
+	- It is only movable from one of the side (sprite should indicate this behaviour)
+	- The character that have the movable block on his side can push it by running into it
+- Button press:
+	- A button activated when the character stands on it
+	- It is deactivated when the character left the tile
+- Laser:
+	- Can't be passed through
+	- Can be deactivated by a button
+	- Can be blocked by things (example: Movable block)
