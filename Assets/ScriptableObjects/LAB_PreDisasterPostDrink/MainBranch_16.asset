@@ -29,7 +29,6 @@ MonoBehaviour:
     worry, that's normal and it should be over very quickly.
   defResponses:
   - ...
+  - Do as he Says
   clips: []
-  opt:
-  - optName: Do as he Says
-    next: {fileID: 11400000}
+  opt: []

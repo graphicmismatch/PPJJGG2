@@ -28,4 +28,4 @@ MonoBehaviour:
   clips: []
   opt:
   - optName: ...
-    next: {fileID: 11400000}
+    next: {fileID: 11400000, guid: 24d941778e017e84ebee832ed7316b47, type: 2}
