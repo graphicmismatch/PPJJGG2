@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9566441e0b37e04492c404717ba622d, type: 3}
+  m_Name: MainBranch_16
+  m_EditorClassIdentifier: 
+  Left:
+    charName: Scientist
+    cha: {fileID: 0}
+    facingLeft: 0
+  Right:
+    charName: Josh
+    cha: {fileID: 0}
+    facingLeft: 1
+  isLeftSpeaking: 1
+  timeBetweenCharacters: 0.1
+  lines:
+  - Now take the bottles and drink the liquid inside. After that you will come here
+    and each grab one of the handles.
+  - I will turn the device on and you will feel an intense tingling sensation. Don't
+    worry, that's normal and it should be over very quickly.
+  defResponses:
+  - ...
+  clips: []
+  opt:
+  - optName: Do as he Says
+    next: {fileID: 11400000}
