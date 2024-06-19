@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class StringCallback : UnityEvent<string>
 {
 }
+[RequireComponent(typeof(AudioSource))]
 public class DialogHelper : MonoBehaviour
 {
 
@@ -34,6 +35,9 @@ public class DialogHelper : MonoBehaviour
     {
         inst = this;
         UIManager.toggleSpeakingPanel(false);
+        if (di != null) {
+            startd();
+        }
     }
     // Update is called once per frame
     void Update()
@@ -41,6 +45,7 @@ public class DialogHelper : MonoBehaviour
         
     }
     public static void startd() {
+        
         inst.asr.Stop();
         inst.Left.changeCharacter(inst.di.Left.cha);
         inst.Left.changeDir(inst.di.Left.facingLeft);

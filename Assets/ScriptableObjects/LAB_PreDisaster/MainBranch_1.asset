@@ -23,7 +23,8 @@ MonoBehaviour:
   isLeftSpeaking: 0
   timeBetweenCharacters: 0.1
   lines:
-  - Of course! I'm sure you heard about unexplainable connection between twins.
+  - Of course! I'm sure you have heard about the unexplainable connection between
+    twins.
   defResponses: []
   clips: []
   opt:

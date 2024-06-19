@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour
     public GameObject speakingPanel;
     public TMP_Text dlog;
     public TMP_Text nam;
+
+    static bool updating;
+    static bool skipD;
     // Start is called before the first frame update
     void Awake()
     {
@@ -32,12 +35,20 @@ public class UIManager : MonoBehaviour
     }
     public IEnumerator slowType(string s, Dialogue di, float tBWc)
     {
+        updating = true;
         dlog.text = "";
         foreach (char c in s)
         {
             dlog.text += c.ToString();
             yield return new WaitForSeconds(tBWc);
+            if (skipD)
+            {
+                skipD = false;
+                dlog.text = s;
+                break;
+            }
         }
+        updating = false;
         DialogHelper.inst.linePrinted.Invoke(di.name);
         if (di.lines.Length > 1)
         {
@@ -59,12 +70,21 @@ public class UIManager : MonoBehaviour
     }
     public IEnumerator slowType(int ind, string s, Dialogue di, float tBWc)
     {
+        updating = true;
         dlog.text = "";
         foreach (char c in s)
         {
+            
             dlog.text += c.ToString();
             yield return new WaitForSeconds(tBWc);
+            if (skipD)
+            {
+                skipD = false;
+                dlog.text = s;
+                break;
+            }
         }
+        updating = false;
         DialogHelper.inst.linePrinted.Invoke(di.name);
         if (ind <= di.defResponses.Length - 1)
         {
@@ -77,6 +97,9 @@ public class UIManager : MonoBehaviour
                 ResponsePanelHelper.addResponse(op.optName, op.next);
             }
         }
+    }
+    public void skip() {
+        skipD = updating;
     }
     public static void updateNameDisplay(string s, bool isLeftTalking)
     {
