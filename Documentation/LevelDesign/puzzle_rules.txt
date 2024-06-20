@@ -1,8 +1,13 @@
 Puzzle rules:
+
 - Characters can move left and right
 - Characters can jump
 	- Max horizontal: 1 block
 	- Max vertical: 1 block
+	
+- Win tile:
+    - 2 win tiles per level (one on each side)
+    - Both characters must stand on the win tile at the same time to validate the level.
 
 - Movable blocks:
 	- Block that exists on both sides
