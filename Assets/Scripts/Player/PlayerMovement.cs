@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public float speed;
     public float coyoteTime;
+    public float DeclperS;
     float ct;
     public Rigidbody2D rb;
     public Transform gc;
@@ -40,7 +41,23 @@ public class PlayerMovement : MonoBehaviour
         else {
             ct = 0;
         }
-        rb.velocityX = movement.x * speed;
+        if (movement.sqrMagnitude > 0)
+        {
+            rb.velocityX = movement.x * speed;
+        }
+        else if(Mathf.Approximately(movement.sqrMagnitude, 0)&& !Mathf.Approximately(rb.velocityX, 0))
+        {
+            if (rb.velocityX is < 0.5f and > -0.5f) {
+                rb.velocityX = 0;
+            }
+            if (rb.velocityX > 0)
+            {
+                rb.velocityX -= DeclperS * Time.fixedDeltaTime;
+            }
+            else if(rb.velocityX < 0) {
+                rb.velocityX += DeclperS * Time.fixedDeltaTime;
+            }
+        }
         if (jump)
         {
             rb.AddForceY(jumpForce,ForceMode2D.Impulse);

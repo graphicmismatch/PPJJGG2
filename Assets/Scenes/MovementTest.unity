@@ -555,9 +555,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ascendingGravity: 2
   descendingGravity: 3
-  jumpForce: 10
-  speed: 10
+  jumpForce: 7
+  speed: 7
   coyoteTime: 0.15
+  DeclperS: 25
   rb: {fileID: 1852472867}
   gc: {fileID: 1913375611}
   gcrad: 0.1
