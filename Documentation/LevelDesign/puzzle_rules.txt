@@ -10,6 +10,9 @@ Puzzle rules:
     - Both characters must stand on the win tile at the same time to validate the level.
 
 
+- Ladder:
+    - Can go up by pressing a button when touching a ladder. (jump button or arrow up?)
+
 - Button press:
 	- A button activated when the character stands on it
 	- It is deactivated when the character left the tile
