@@ -9,14 +9,34 @@ Puzzle rules:
     - 2 win tiles per level (one on each side)
     - Both characters must stand on the win tile at the same time to validate the level.
 
+
+- Button press:
+	- A button activated when the character stands on it
+	- It is deactivated when the character left the tile
+
+
 - Movable blocks:
 	- Block that exists on both sides
 	- It is only movable from one of the side (sprite should indicate this behaviour)
 	- The character that have the movable block on his side can push it by running into it
-- Button press:
-	- A button activated when the character stands on it
-	- It is deactivated when the character left the tile
+
+
+- Gem Placeholders:
+	- Place a Gem to trigger an action
+
+- Gems:
+	- The character can collect a Gem in the level
+	- Must be placed in a Gem Placeholder
+
+
 - Laser:
 	- Can't be passed through
 	- Can be deactivated by a button
 	- Can be blocked by things (example: Movable block)
+
+
+- Teleporters:
+	- 2 teleporter on the same side
+	- walking on it trigger teleportation
+	- works in 2 directions
+	- On the other side: A TeleporterPositioner. Work the same as MovableBlock but alter the position of one of the teleporter.
