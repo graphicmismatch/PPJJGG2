@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Left:
     charName: Laura
-    cha: {fileID: 0}
+    cha: {fileID: -6881042261389924142, guid: af84f5113b14add4a951c0806472dbed, type: 3}
     facingLeft: 0
   Right:
     charName: Scientist

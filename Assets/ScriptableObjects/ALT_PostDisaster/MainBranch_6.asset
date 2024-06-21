@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Left:
     charName: Laura
-    cha: {fileID: 0}
+    cha: {fileID: -6881042261389924142, guid: af84f5113b14add4a951c0806472dbed, type: 3}
     facingLeft: 0
   Right:
     charName: Josh
-    cha: {fileID: 0}
+    cha: {fileID: -8437554512588824944, guid: a6ea42b807ac9824da4f8a975f5a5636, type: 3}
     facingLeft: 1
   isLeftSpeaking: 1
   timeBetweenCharacters: 0.2

@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     bool jump;
     bool onGround;
-
+    bool jumping;
     public float ascendingGravity;
     public float descendingGravity;
     public float jumpForce;
@@ -19,11 +19,18 @@ public class PlayerMovement : MonoBehaviour
     public Transform gc;
     public float gcrad;
     public LayerMask groundLayers;
+    public bool hasGem ;
+    public Gem g;
+    public bool facingRight;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        hasGem = false;
+        g = null;
         rb.gravityScale = ascendingGravity;
         ct = 0;
+     
     }
 
     private void Update()
@@ -39,6 +46,9 @@ public class PlayerMovement : MonoBehaviour
             ct += Time.fixedDeltaTime;
         }
         else {
+            if (jumping) {
+                jumping = false;
+            }
             ct = 0;
         }
         if (movement.sqrMagnitude > 0)
@@ -62,6 +72,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForceY(jumpForce,ForceMode2D.Impulse);
             jump = false;
+            jumping = true;
         }
 
         if (rb.velocityY < 0)
@@ -74,11 +85,18 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void OnMove(InputAction.CallbackContext ctx) {
-        movement = Vector2.right *ctx.ReadValue<float>();
+        float v = ctx.ReadValue<float>();
+        movement = Vector2.right *v;
+        if (v>0) {
+            facingRight = true;
+        }
+        else if (v < 0) {
+            facingRight = false;
+        }
     }
     public void OnJump(InputAction.CallbackContext ctx)
     {
-        jump = ctx.ReadValueAsButton() && (onGround || ct<=coyoteTime) ;
+        jump = ctx.ReadValueAsButton() && (onGround || ct<=coyoteTime)&&!jumping ;
 
     }
 }
