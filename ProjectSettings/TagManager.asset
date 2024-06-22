@@ -43,6 +43,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: RedBackground
+    uniqueID: 2129845229
+    locked: 0
+  - name: RedDecoration
+    uniqueID: 2232946259
+    locked: 0
+  - name: RedGround
+    uniqueID: 2240013455
+    locked: 0
+  - name: BlueBackground
+    uniqueID: 1390378905
+    locked: 0
+  - name: BlueDecoration
+    uniqueID: 1043848025
+    locked: 0
+  - name: BlueGround
+    uniqueID: 115784509
+    locked: 0
   - name: Player
     uniqueID: 3634469605
     locked: 0
