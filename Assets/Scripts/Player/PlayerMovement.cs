@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     public bool hasGem ;
     public Gem g;
     public bool facingRight;
-
+    public SpriteRenderer spr;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        spr.flipX = facingRight;
         if (!onGround)
         {
             ct += Time.fixedDeltaTime;
