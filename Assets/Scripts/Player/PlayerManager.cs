@@ -2,6 +2,12 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+
+
+    public PlayerMovement playerA;
+    public PlayerMovement playerB;
+
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
