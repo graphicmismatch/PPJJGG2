@@ -8,7 +8,7 @@ public class CheckDistanceWithOther : MonoBehaviour
     public Transform otherTransform;
     public bool defaultToPlayer1;
     private float _distance = Int32.MaxValue;
-    private void Awake()
+    private void Start()
     {
         if (otherTransform == null)
         {

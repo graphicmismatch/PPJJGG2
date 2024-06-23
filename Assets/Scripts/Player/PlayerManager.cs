@@ -6,6 +6,8 @@ public class PlayerManager : MonoBehaviour
 
     public PlayerMovement playerA;
     public PlayerMovement playerB;
+    public Transform playerAinit;
+    public Transform playerBinit;
 
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created

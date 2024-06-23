@@ -8,10 +8,11 @@ public class Teleporter : MonoBehaviour
     public Teleporter target;
     public bool doTeleport;
     public bool disabled;
+    bool disabledTimer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        disabledTimer = false;
     }
 
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class Teleporter : MonoBehaviour
             }
 
         }
-        else
+        else if(!disabledTimer)
         {
             StartCoroutine(reenable());
         }
@@ -37,7 +38,9 @@ public class Teleporter : MonoBehaviour
     }
     IEnumerator reenable()
     {
-        yield return new WaitForEndOfFrame();
+        disabledTimer = true;
+        yield return new WaitForSeconds(0.5f);
+        disabledTimer = false;
         var currentDistance = cd.getDistance();
 
         if (currentDistance > activationDistance)
@@ -45,6 +48,7 @@ public class Teleporter : MonoBehaviour
             if (doTeleport == false)
             {
                 doTeleport = true;
+
             }
 
         }
