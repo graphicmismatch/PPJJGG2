@@ -408,6 +408,78 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4625523099866536523, guid: 7e6b6add98993a041a33ad7870f672bb, type: 3}
   m_PrefabInstance: {fileID: 8127655168005064877}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &409626477
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 347805930891038135, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: isActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395047772915529863, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_Name
+      value: player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.724
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.314
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953497692881698213, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+--- !u!114 &409626478 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 347805930891038135, guid: 4f4229230d1bad84fbd6e7894e85c421, type: 3}
+  m_PrefabInstance: {fileID: 409626477}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f4eaa08a7f2280468478feac968570e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &430886583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5144483868721785932, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
@@ -831,6 +903,7 @@ GameObject:
   - component: {fileID: 1234019388}
   - component: {fileID: 1234019387}
   - component: {fileID: 1234019390}
+  - component: {fileID: 1234019392}
   - component: {fileID: 1234019391}
   m_Layer: 0
   m_Name: Main Camera
@@ -996,6 +1069,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 409626478}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
     m_ActionName: 'Player/Move[/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
@@ -1011,12 +1096,36 @@ MonoBehaviour:
     m_ActionId: 852140f2-7766-474d-8707-702459ba45f3
     m_ActionName: 'Player/Interact[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1234019392}
+        m_TargetAssemblyTypeName: PlayerManager, Assembly-CSharp
+        m_MethodName: switchPlayer
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 27c5f898-bc57-4ee1-8800-db469aca5fe3
     m_ActionName: 'Player/Crouch[/Keyboard/c]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 294172799}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 409626478}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
@@ -1041,6 +1150,18 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 294172799}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnSprint
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 409626478}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: OnSprint
         m_Mode: 0
@@ -1099,6 +1220,26 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1234019392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234019386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8963a773ac66fc4aac04445b0d0b912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerA: {fileID: 294172799}
+  playerB: {fileID: 409626478}
+  playerAinit: {fileID: 0}
+  playerBinit: {fileID: 0}
+  playerAcamZ: -10
+  playerBcamZ: -10
+  onPlayerA: 1
+  followSharpness: 0.5
 --- !u!1001 &1732187255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1914,3 +2055,4 @@ SceneRoots:
   - {fileID: 367200020}
   - {fileID: 893963667}
   - {fileID: 1732187255}
+  - {fileID: 409626477}

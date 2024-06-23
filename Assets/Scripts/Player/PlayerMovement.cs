@@ -73,21 +73,7 @@ public class PlayerMovement : MonoBehaviour
                     rb.velocityX = movement.x * speed;
                 }
             }
-            else if (Mathf.Approximately(movement.sqrMagnitude, 0) && !Mathf.Approximately(rb.velocityX, 0))
-            {
-                if (rb.velocityX is < 0.5f and > -0.5f)
-                {
-                    rb.velocityX = 0;
-                }
-                if (rb.velocityX > 0)
-                {
-                    rb.velocityX -= DeclperS * Time.fixedDeltaTime;
-                }
-                else if (rb.velocityX < 0)
-                {
-                    rb.velocityX += DeclperS * Time.fixedDeltaTime;
-                }
-            }
+           
             if (jump)
             {
                 rb.AddForceY(jumpForce, ForceMode2D.Impulse);
@@ -104,8 +90,23 @@ public class PlayerMovement : MonoBehaviour
                 rb.gravityScale = ascendingGravity;
             }
         }
+        if (Mathf.Approximately(movement.sqrMagnitude, 0) && !Mathf.Approximately(rb.velocityX, 0))
+        {
+            if (rb.velocityX is < 0.5f and > -0.5f)
+            {
+                rb.velocityX = 0;
+            }
+            if (rb.velocityX > 0)
+            {
+                rb.velocityX -= DeclperS * Time.fixedDeltaTime;
+            }
+            else if (rb.velocityX < 0)
+            {
+                rb.velocityX += DeclperS * Time.fixedDeltaTime;
+            }
+        }
         anim.SetBool("jumping", jumping);
-        anim.SetBool("moving", movement.sqrMagnitude > 0);
+        anim.SetBool("moving", rb.velocity.sqrMagnitude > 0);
         anim.SetBool("running", sprint);
     }
 
