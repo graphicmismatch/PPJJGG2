@@ -48,10 +48,12 @@ public class PlayerManager : MonoBehaviour
             if (onPlayerA)
             {
                 this.transform.position = new Vector3(playerA.transform.position.x, playerAcamY, playerAcamZ);
+                playerB.rb.velocityX = 0;
             }
             else
             {
                 this.transform.position = new Vector3(playerB.transform.position.x, playerBcamY, playerBcamZ);
+                playerA.rb.velocityX = 0;
             }
             inputlatch = false;
         }
