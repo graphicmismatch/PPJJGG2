@@ -14,19 +14,22 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce;
     public float speed;
     public float sprintspeed;
+    public float ladderClimbSpeed;
     public float coyoteTime;
     public float DeclperS;
     float ct;
     public Rigidbody2D rb;
     public Transform gc;
+    public Transform lc;
     public float gcrad;
     public LayerMask groundLayers;
+    public LayerMask LadderLayers;
     public bool hasGem ;
     public Gem g;
     public bool facingRight;
     public SpriteRenderer spr;
     public Animator anim;
-
+    bool onLadder;
 
     public bool isActive;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,7 +45,8 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
       
-        onGround = Physics2D.OverlapCircleAll(gc.position, gcrad, groundLayers).Length > 0;
+        onGround = Physics2D.OverlapCircleAll(gc.position, gcrad, groundLayers|LadderLayers).Length > 0;
+        onLadder = Physics2D.OverlapCircleAll(lc.position, gcrad, LadderLayers).Length > 0;
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -76,9 +80,22 @@ public class PlayerMovement : MonoBehaviour
            
             if (jump)
             {
-                rb.AddForceY(jumpForce, ForceMode2D.Impulse);
-                jump = false;
-                jumping = true;
+                if (!onLadder)
+                {
+                    rb.AddForceY(jumpForce, ForceMode2D.Impulse);
+                    jump = false;
+                    jumping = true;
+                }
+                else {
+                    if (sprint)
+                    {
+                        rb.velocityY = -ladderClimbSpeed;
+                    }
+                    else
+                    {
+                        rb.velocityY = ladderClimbSpeed;
+                    }
+                }
             }
 
             if (rb.velocityY < 0)
@@ -87,7 +104,12 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                rb.gravityScale = ascendingGravity;
+                if (onLadder) {
+                    rb.gravityScale = 0;
+                }
+                else {
+                    rb.gravityScale = ascendingGravity;
+                }
             }
         }
         if (Mathf.Approximately(movement.sqrMagnitude, 0) && !Mathf.Approximately(rb.velocityX, 0))
@@ -103,6 +125,11 @@ public class PlayerMovement : MonoBehaviour
             else if (rb.velocityX < 0)
             {
                 rb.velocityX += DeclperS * Time.fixedDeltaTime;
+            }
+        }
+        if (onLadder) {
+            if (!jump) {
+                rb.velocityY = 0;
             }
         }
         anim.SetBool("jumping", jumping);
@@ -129,7 +156,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isActive)
         {
-            jump = ctx.ReadValueAsButton() && (onGround || ct <= coyoteTime) && !jumping;
+            if (!onLadder)
+            {
+                jump = ctx.ReadValueAsButton() && (onGround || ct <= coyoteTime) && !jumping;
+            }
+            else {
+                jump = ctx.ReadValueAsButton();
+            }
         }
 
     }
