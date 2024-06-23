@@ -11,7 +11,8 @@ public class PlayerManager : MonoBehaviour
 
     public float playerAcamZ;
     public float playerBcamZ;
-
+    public float playerAcamY;
+    public float playerBcamY;
     public bool onPlayerA;
     bool inputlatch;
     public float followSharpness;
@@ -26,10 +27,10 @@ public class PlayerManager : MonoBehaviour
     {
         if (onPlayerA)
         {
-            transform.position += (new Vector3(playerA.transform.position.x, 0, playerAcamZ) - transform.position) * followSharpness;
+            transform.position += (new Vector3(playerA.transform.position.x, playerAcamY, playerAcamZ) - transform.position) * followSharpness;
         }
         else {
-            transform.position += (new Vector3(playerB.transform.position.x, 0, playerBcamZ) - transform.position) * followSharpness;
+            transform.position += (new Vector3(playerB.transform.position.x, playerBcamY, playerBcamZ) - transform.position) * followSharpness;
         }
     }
     public static void Dead() { 
@@ -46,11 +47,11 @@ public class PlayerManager : MonoBehaviour
 
             if (onPlayerA)
             {
-                this.transform.position = new Vector3(playerA.transform.position.x, 0, playerAcamZ);
+                this.transform.position = new Vector3(playerA.transform.position.x, playerAcamY, playerAcamZ);
             }
             else
             {
-                this.transform.position = new Vector3(playerB.transform.position.x, 0, playerBcamZ);
+                this.transform.position = new Vector3(playerB.transform.position.x, playerBcamY, playerBcamZ);
             }
             inputlatch = false;
         }
