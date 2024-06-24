@@ -17,7 +17,7 @@ MonoBehaviour:
     cha: {fileID: -8437554512588824944, guid: a6ea42b807ac9824da4f8a975f5a5636, type: 3}
     facingLeft: 0
   Right:
-    charName: Scientist
+    charName: Trevis
     cha: {fileID: 0}
     facingLeft: 1
   isLeftSpeaking: 0

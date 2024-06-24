@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MainBranch_18
   m_EditorClassIdentifier: 
   Left:
-    charName: Scientist
+    charName: Trevis
     cha: {fileID: 0}
     facingLeft: 0
   Right:
@@ -23,7 +23,7 @@ MonoBehaviour:
   isLeftSpeaking: 1
   timeBetweenCharacters: 0.1
   lines:
-  - I think it happened all thanks to the explosion immense power.
+  - I think she was able to do this only thanks to the explosion's immense power.
   defResponses: []
   clips: []
   opt:

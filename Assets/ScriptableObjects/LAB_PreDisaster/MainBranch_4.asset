@@ -17,7 +17,7 @@ MonoBehaviour:
     cha: {fileID: 0}
     facingLeft: 0
   Right:
-    charName: Scientist
+    charName: Trevis
     cha: {fileID: 0}
     facingLeft: 1
   isLeftSpeaking: 1
