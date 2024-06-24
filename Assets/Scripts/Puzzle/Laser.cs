@@ -44,6 +44,12 @@ public class Laser : MonoBehaviour
         lr.enabled = false;
     }
 
+    public void invert()
+    {
+        activated = !activated;
+        lr.enabled = !lr.enabled;
+    }
+
     public void toggle(bool s)
     {
         activated = s;
