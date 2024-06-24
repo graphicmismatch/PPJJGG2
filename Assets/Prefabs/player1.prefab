@@ -158,7 +158,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: 6830de02d48c5e9419c4ccfebfd3198d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 65
+    m_Bits: 833
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 54
@@ -192,7 +192,7 @@ MonoBehaviour:
   gcrad: 0.1
   groundLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 576
   LadderLayers:
     serializedVersion: 2
     m_Bits: 256

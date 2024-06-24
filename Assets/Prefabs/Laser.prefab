@@ -48,10 +48,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endpoint: {fileID: 4706713644831858102}
   lr: {fileID: 4192346988635428228}
-  activated: 0
+  activated: 1
   lineWidth: 0.1
   lineColor: {r: 1, g: 0, b: 0, a: 1}
   mat: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  grnd:
+    serializedVersion: 2
+    m_Bits: 512
+  player:
+    serializedVersion: 2
+    m_Bits: 128
   hit:
     m_PersistentCalls:
       m_Calls: []

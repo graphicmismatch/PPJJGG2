@@ -424,6 +424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PreSetupPlayerandCam
       objectReference: {fileID: 0}
+    - target: {fileID: 1618535059248207721, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: orthographic size
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5222430109825296676, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: m_LocalPosition.y
       value: -21.4

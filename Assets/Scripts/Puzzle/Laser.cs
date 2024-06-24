@@ -5,15 +5,17 @@ public class Laser : MonoBehaviour
     public Transform endpoint;
     public LineRenderer lr;
     public bool activated;
-
+    private Vector3 raypoint;
     public float lineWidth;
     public Color lineColor;
     public Material mat;
-    
+    public LayerMask grnd;
+    public LayerMask player;
     public UnityEvent hit;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        raypoint = endpoint.position;
         hit.AddListener(PlayerManager.Dead);
         lr.useWorldSpace = true;
         lr.startWidth = lineWidth;
@@ -30,13 +32,25 @@ public class Laser : MonoBehaviour
     void Update()
     {
         lr.SetPosition(0, this.transform.position);
-        lr.SetPosition(1, endpoint.transform.position);
+        
         if (activated) {
-            RaycastHit2D[] rh = Physics2D.LinecastAll(transform.position, endpoint.transform.position, 1 << 7);
-            if (rh.Length > 0) {
-                hit.Invoke();
+            RaycastHit2D[] rh = Physics2D.LinecastAll(transform.position, endpoint.transform.position,grnd|player);
+            raypoint = endpoint.position;
+            if (rh.Length>0) {
+                
+                if (IsInLayerMask(rh[0].transform.gameObject, grnd))
+                {
+                    raypoint = new Vector3(rh[0].point.x,rh[0].point.y,raypoint.z);
+                }
+                else
+                {
+                    hit.Invoke();
+                }
             }
+
+            
         }
+        lr.SetPosition(1, raypoint);
     }
 
     public void deactivate() {
@@ -55,4 +69,5 @@ public class Laser : MonoBehaviour
         activated = s;
         lr.enabled = s;
     }
+    public static bool IsInLayerMask(GameObject obj, LayerMask mask) => (mask.value & (1 << obj.layer)) != 0;
 }
