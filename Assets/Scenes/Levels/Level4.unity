@@ -38955,6 +38955,38 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 263377826}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeStatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChan, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

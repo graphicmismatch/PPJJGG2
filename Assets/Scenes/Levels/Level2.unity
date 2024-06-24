@@ -19041,7 +19041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1618535059248207721, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: orthographic size
-      value: 6.75
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4504197040020635580, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: 'clips.Array.data[0]'
@@ -19104,6 +19104,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+--- !u!114 &1638119481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4395675515544495786, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+  m_PrefabInstance: {fileID: 1638119480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e6bde88e9bdbc498b4c9d185e7564a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1689227717
 GameObject:
   m_ObjectHideFlags: 0
@@ -37221,6 +37232,38 @@ PrefabInstance:
       propertyPath: otherTransform
       value: 
       objectReference: {fileID: 592697035}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1638119481}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeStatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChan, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
