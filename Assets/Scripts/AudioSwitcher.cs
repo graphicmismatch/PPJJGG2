@@ -19,7 +19,8 @@ public class AudioSwitcher : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        asr.clip = clips[0];
+        asr.Play();
     }
 
     // Update is called once per frame
