@@ -572,7 +572,7 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: d325a20bb8f8e469190739a4a1dba14d, type: 3}
   - {fileID: 8300000, guid: 4898c4121bf424cbd8ddc4f93bcefaea, type: 3}
-  curClip: 0
+  curClip: 1
 --- !u!1001 &1891589251993694944
 PrefabInstance:
   m_ObjectHideFlags: 0
