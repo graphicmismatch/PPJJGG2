@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
 using System.Collections;
+
 public class Teleporter : MonoBehaviour
 {
     public CheckDistanceWithOther cd;
@@ -9,7 +10,9 @@ public class Teleporter : MonoBehaviour
     public bool doTeleport;
     public bool disabled;
     bool disabledTimer;
+
     public Animator anim;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,23 +29,28 @@ public class Teleporter : MonoBehaviour
             if (doTeleport && !disabled)
             {
                 target.doTeleport = false;
-                cd.otherTransform.position = target.transform.position;
+                var tpPosition =
+                    new Vector3(
+                        target.transform.position.x,
+                        target.transform.position.y + 1,
+                        target.transform.position.z
+                    );
+                cd.otherTransform.position = tpPosition;
                 anim.SetTrigger("teleport");
                 target.anim.ResetTrigger("teleport");
                 target.anim.SetTrigger("teleport");
             }
-
         }
-        else if(!disabledTimer)
+        else if (!disabledTimer)
         {
             StartCoroutine(reenable());
         }
-
     }
+
     IEnumerator reenable()
     {
         disabledTimer = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2f);
         disabledTimer = false;
         var currentDistance = cd.getDistance();
         anim.ResetTrigger("teleport");
@@ -51,9 +59,7 @@ public class Teleporter : MonoBehaviour
             if (doTeleport == false)
             {
                 doTeleport = true;
-
             }
-
         }
     }
 }

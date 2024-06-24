@@ -2327,7 +2327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1618535059248207721, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: orthographic size
-      value: 4.5
+      value: 6.75
       objectReference: {fileID: 0}
     - target: {fileID: 7956959236138614839, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: onPlayerA
@@ -8919,7 +8919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2190927109771084745, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -20.5
       objectReference: {fileID: 0}
     - target: {fileID: 2840760163434701116, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_Name
