@@ -9,6 +9,7 @@ public class Teleporter : MonoBehaviour
     public bool doTeleport;
     public bool disabled;
     bool disabledTimer;
+    public Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,7 +27,9 @@ public class Teleporter : MonoBehaviour
             {
                 target.doTeleport = false;
                 cd.otherTransform.position = target.transform.position;
-
+                anim.SetTrigger("teleport");
+                target.anim.ResetTrigger("teleport");
+                target.anim.SetTrigger("teleport");
             }
 
         }
@@ -42,7 +45,7 @@ public class Teleporter : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         disabledTimer = false;
         var currentDistance = cd.getDistance();
-
+        anim.ResetTrigger("teleport");
         if (currentDistance > activationDistance)
         {
             if (doTeleport == false)
