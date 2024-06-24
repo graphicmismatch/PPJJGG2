@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e6bde88e9bdbc498b4c9d185e7564a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: 
+  sc: LabDialoguePostDisaster
 --- !u!1 &928738094
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Menu.unity
     guid: cef8ec66a55cb4b4c93c98eace02fadc
   - enabled: 1
+    path: Assets/Scenes/Levels/CutScenes/AltDialoguePostBox.unity
+    guid: 11370bbabfec2af4e8d6a638ce4e2a27
+  - enabled: 1
+    path: Assets/Scenes/Levels/CutScenes/AltDialoguePostDisaster.unity
+    guid: ba31155a517e6ab41a0d99f114d5060c
+  - enabled: 1
+    path: Assets/Scenes/Levels/CutScenes/boxMove.unity
+    guid: 56c91309e21bb1f4ebebca534f11b005
+  - enabled: 1
+    path: Assets/Scenes/Levels/CutScenes/disasterCutscene.unity
+    guid: d2dd75600ce0f6e48bf8d6db577cda87
+  - enabled: 1
+    path: Assets/Scenes/Levels/CutScenes/LabDialoguePostDisaster.unity
+    guid: a455390332dd31a49a99b83879ac8ceb
+  - enabled: 1
+    path: Assets/Scenes/Levels/CutScenes/LabDialoguePreDisaster.unity
+    guid: 21b64ebbf9be49c4198bc8ec047187b9
+  - enabled: 1
+    path: Assets/Scenes/Levels/CutScenes/LabDialoguePreDisasterPostDrink.unity
+    guid: 2c511d7684a0d7849bb0785d24c84836
+  - enabled: 1
     path: Assets/Scenes/Levels/Level0.unity
     guid: 536a6444e12207a498f24475bc0c7430
   - enabled: 1

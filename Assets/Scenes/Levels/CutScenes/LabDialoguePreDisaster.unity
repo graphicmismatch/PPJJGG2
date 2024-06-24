@@ -3242,6 +3242,34 @@ PrefabInstance:
       propertyPath: di
       value: 
       objectReference: {fileID: 11400000, guid: 0e3e0e1766009fd458596fc59fb9f7d8, type: 2}
+    - target: {fileID: 1856317814692142489, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+      propertyPath: dialogueEnded.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856317814692142489, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+      propertyPath: dialogueEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856317814692142489, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+      propertyPath: dialogueEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 307443881}
+    - target: {fileID: 1856317814692142489, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+      propertyPath: dialogueEnded.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856317814692142489, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+      propertyPath: dialogueEnded.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: change
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856317814692142489, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+      propertyPath: dialogueEnded.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChan, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856317814692142489, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+      propertyPath: dialogueEnded.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2191985932245097300, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -3289,8 +3317,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4091920810246233529, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 307443881}
   m_SourcePrefab: {fileID: 100100000, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+--- !u!1 &307443880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4091920810246233529, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
+  m_PrefabInstance: {fileID: 307443879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &307443881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307443880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65e6bde88e9bdbc498b4c9d185e7564a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sc: LabDialoguePreDisasterPostDrink
 --- !u!1 &1319299893
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,6 +54,10 @@ public class UIManager : MonoBehaviour
         {
             ResponsePanelHelper.addResponse(di.defResponses[0]);
         }
+        else if (di.lines.Length == 1 && di.defResponses.Length == 1 && di.opt.Length == 0) {
+
+            ResponsePanelHelper.addResponse(di.defResponses[0]);
+        }
         else
         {
             foreach (Options op in di.opt)

@@ -89,6 +89,7 @@ public class DialogHelper : MonoBehaviour
         inst.ind++;
         inst.asr.Stop();
         ResponsePanelHelper.clearResponses();
+
         if (inst.ind <= inst.di.lines.Length - 1)
         {
             if (inst.ind <= inst.di.clips.Length - 1)

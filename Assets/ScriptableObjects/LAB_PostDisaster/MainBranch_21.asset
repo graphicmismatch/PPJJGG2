@@ -23,8 +23,10 @@ MonoBehaviour:
   isLeftSpeaking: 0
   timeBetweenCharacters: 0.1
   lines:
-  - I will do it, don't worry. Now let's go!
+  - 'I will do it, don''t worry. '
+  - Now let's go!
   defResponses:
+  - ...
   - ...
   clips: []
   opt: []

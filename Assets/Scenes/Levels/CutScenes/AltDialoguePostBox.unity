@@ -3301,7 +3301,7 @@ PrefabInstance:
     - target: {fileID: 1856317814692142489, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
       propertyPath: di
       value: 
-      objectReference: {fileID: 11400000, guid: 086b010fab450b94083fb7731e486938, type: 2}
+      objectReference: {fileID: 11400000, guid: 88627405b5175764b96623443cbf7c44, type: 2}
     - target: {fileID: 1856317814692142489, guid: fdb85aed467abb945aa96dbb116d9c06, type: 3}
       propertyPath: dialogueEnded.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -3399,7 +3399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e6bde88e9bdbc498b4c9d185e7564a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sc: boxMove
+  sc: Level0
 --- !u!1 &1319299893
 GameObject:
   m_ObjectHideFlags: 0
