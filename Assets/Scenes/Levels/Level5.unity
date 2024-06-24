@@ -22268,6 +22268,14 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 4.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4504197040020635580, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: 'clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2450f58eb421b4289a3968c924d446dc, type: 3}
+    - target: {fileID: 4504197040020635580, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: 'clips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 37fe93f8200fd41f0b0c6c19535db036, type: 3}
     - target: {fileID: 9191008429933506129, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -19046,11 +19046,11 @@ PrefabInstance:
     - target: {fileID: 4504197040020635580, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: 'clips.Array.data[0]'
       value: 
-      objectReference: {fileID: 8300000, guid: 2450f58eb421b4289a3968c924d446dc, type: 3}
+      objectReference: {fileID: 8300000, guid: 0279a28790c9d41af927e5498da44d48, type: 3}
     - target: {fileID: 4504197040020635580, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: 'clips.Array.data[1]'
       value: 
-      objectReference: {fileID: 8300000, guid: 37fe93f8200fd41f0b0c6c19535db036, type: 3}
+      objectReference: {fileID: 8300000, guid: aad516aad8b8e46078f240988d4c160a, type: 3}
     - target: {fileID: 7329205729693512670, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: m_Resource
       value: 
