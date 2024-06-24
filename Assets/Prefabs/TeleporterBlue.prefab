@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cd: {fileID: 5639776662955008631}
-  activationDistance: 1
+  activationDistance: 0.75
   target: {fileID: 0}
   doTeleport: 0
   disabled: 0

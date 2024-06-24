@@ -39065,6 +39065,10 @@ PrefabInstance:
       value: WinTileBlue
       objectReference: {fileID: 0}
     - target: {fileID: 7806824518337235484, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: _distance
+      value: 2.147484e+9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806824518337235484, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: otherTransform
       value: 
       objectReference: {fileID: 0}

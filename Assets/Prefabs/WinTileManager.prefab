@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkDistanceWithCharacterA: {fileID: 5007366436864826835}
   checkDistanceWithCharacterB: {fileID: 7806824518337235484}
-  activationDistance: 1
+  activationDistance: 0.5
   win:
     m_PersistentCalls:
       m_Calls: []
