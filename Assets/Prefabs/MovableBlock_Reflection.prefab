@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8556053094588115660}
   - component: {fileID: 7679269458438042905}
   - component: {fileID: 6030648545621320278}
-  m_Layer: 6
+  m_Layer: 9
   m_Name: MovableBlock_Reflection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6830de02d48c5e9419c4ccfebfd3198d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -134,7 +134,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.98, y: 0.98}
   m_EdgeRadius: 0
 --- !u!50 &7679269458438042905
 Rigidbody2D:
@@ -152,7 +152,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6830de02d48c5e9419c4ccfebfd3198d, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
