@@ -132,7 +132,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CREDTIS BUTTONpngPLAY_0: -6355087809292290507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
