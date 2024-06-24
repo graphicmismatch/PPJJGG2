@@ -15,7 +15,7 @@ public class Laser : MonoBehaviour
     void Start()
     {
         hit.AddListener(PlayerManager.Dead);
-        lr.useWorldSpace = false;
+        lr.useWorldSpace = true;
         lr.startWidth = lineWidth;
         lr.endWidth = lineWidth;
         lr.material = mat;
@@ -29,6 +29,7 @@ public class Laser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        lr.SetPosition(0, this.transform.position);
         lr.SetPosition(1, endpoint.transform.position);
         if (activated) {
             RaycastHit2D[] rh = Physics2D.LinecastAll(transform.position, endpoint.transform.position, 1 << 7);
