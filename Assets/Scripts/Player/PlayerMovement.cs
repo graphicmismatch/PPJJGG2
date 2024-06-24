@@ -132,6 +132,11 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocityY = 0;
             }
         }
+        if (!isActive) {
+            sprint = false;
+            movement = new Vector2();
+
+        }
         anim.SetBool("jumping", jumping);
         anim.SetBool("moving", rb.velocity.sqrMagnitude > 0);
         anim.SetBool("running", sprint);

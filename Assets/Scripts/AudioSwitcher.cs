@@ -14,6 +14,7 @@ public class AudioSwitcher : MonoBehaviour
         int samp = asr.timeSamples;
         asr.clip = clips[curClip];
         asr.timeSamples = samp;
+        asr.Play();
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -32,6 +32,8 @@ public class PlayerManager : MonoBehaviour
         else {
             transform.position += (new Vector3(playerB.transform.position.x, playerBcamY, playerBcamZ) - transform.position) * followSharpness;
         }
+        playerA.isActive = onPlayerA;
+        playerB.isActive = !onPlayerA;
     }
     public static void Dead() { 
     

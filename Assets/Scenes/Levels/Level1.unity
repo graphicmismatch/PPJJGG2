@@ -136,6 +136,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PreSetupPlayerandCam
       objectReference: {fileID: 0}
+    - target: {fileID: 4504197040020635580, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: 'clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0279a28790c9d41af927e5498da44d48, type: 3}
+    - target: {fileID: 4504197040020635580, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: 'clips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: aad516aad8b8e46078f240988d4c160a, type: 3}
+    - target: {fileID: 7329205729693512670, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 0279a28790c9d41af927e5498da44d48, type: 3}
+    - target: {fileID: 7329205729693512670, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0279a28790c9d41af927e5498da44d48, type: 3}
     - target: {fileID: 9191008429933506129, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -232,7 +248,7 @@ GameObject:
   - component: {fileID: 916367383}
   - component: {fileID: 916367382}
   - component: {fileID: 916367381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundTilemapBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11363,7 +11379,7 @@ GameObject:
   - component: {fileID: 2008215257}
   - component: {fileID: 2008215256}
   - component: {fileID: 2008215255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundTilemapRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17869,6 +17885,10 @@ PrefabInstance:
       propertyPath: otherTransform
       value: 
       objectReference: {fileID: 640748856}
+    - target: {fileID: 7806824518337235484, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: defaultToPlayer1
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7982357857777309192, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_FlipY
       value: 0

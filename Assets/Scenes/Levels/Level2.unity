@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 916367383}
   - component: {fileID: 916367382}
   - component: {fileID: 916367381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundTilemapBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4383,6 +4383,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PreSetupPlayerandCam
       objectReference: {fileID: 0}
+    - target: {fileID: 4504197040020635580, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: 'clips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2450f58eb421b4289a3968c924d446dc, type: 3}
+    - target: {fileID: 4504197040020635580, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: 'clips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 37fe93f8200fd41f0b0c6c19535db036, type: 3}
+    - target: {fileID: 7329205729693512670, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 2450f58eb421b4289a3968c924d446dc, type: 3}
+    - target: {fileID: 7329205729693512670, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2450f58eb421b4289a3968c924d446dc, type: 3}
     - target: {fileID: 9191008429933506129, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6799,7 +6815,7 @@ GameObject:
   - component: {fileID: 2008215257}
   - component: {fileID: 2008215256}
   - component: {fileID: 2008215255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundTilemapRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8633,10 +8649,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 893963667}
     m_Modifications:
-    - target: {fileID: 2190927109771084745, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -20.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5007366436864826835, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: otherTransform
       value: 
@@ -8684,6 +8696,10 @@ PrefabInstance:
     - target: {fileID: 5632852991689264370, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_Name
       value: WinTileManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806824518337235484, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: _distance
+      value: 2.147484e+9
       objectReference: {fileID: 0}
     - target: {fileID: 7806824518337235484, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: otherTransform
