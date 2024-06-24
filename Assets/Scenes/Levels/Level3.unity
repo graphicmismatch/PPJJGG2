@@ -2303,6 +2303,38 @@ PrefabInstance:
       propertyPath: activated
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1309327640}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeStatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChan, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2324,6 +2356,10 @@ PrefabInstance:
     - target: {fileID: 928050997130822796, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: m_Name
       value: PreSetupPlayerandCam
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618535059248207721, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: orthographic size
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 9191008429933506129, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18572,6 +18608,38 @@ PrefabInstance:
     - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
       propertyPath: activated
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1309327640}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: changeStatic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneChan, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6029031980618760841, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
+      propertyPath: hit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
