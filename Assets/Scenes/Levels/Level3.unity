@@ -2282,18 +2282,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4192346988635428228, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
-      propertyPath: m_SortingLayer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4192346988635428228, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1892434643
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706713644831858102, guid: 8e4c7f30f97d08b4c9ce5e4ce6d14503, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.42
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2315,6 +2303,14 @@ PrefabInstance:
     - target: {fileID: 928050997130822796, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: m_Name
       value: PreSetupPlayerandCam
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618535059248207721, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: orthographic size
+      value: 6.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7956959236138614839, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
+      propertyPath: onPlayerA
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9191008429933506129, guid: 15fe3dde6aa67f04282b958005c9de87, type: 3}
       propertyPath: m_LocalPosition.x

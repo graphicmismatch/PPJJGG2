@@ -197,7 +197,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      labblowup22_0: -3410935863219749903
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
