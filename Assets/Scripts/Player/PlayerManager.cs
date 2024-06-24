@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 public class PlayerManager : MonoBehaviour
 {
 
-
+    public AudioSwitcher auds;
     public PlayerMovement playerA;
     public PlayerMovement playerB;
     public Transform playerAinit;
@@ -41,7 +41,7 @@ public class PlayerManager : MonoBehaviour
         if (ctx.ReadValueAsButton() && inputlatch)
         {
             onPlayerA = !onPlayerA;
-
+            auds.switchClip();
             playerA.isActive = onPlayerA;
             playerB.isActive = !onPlayerA;
 
