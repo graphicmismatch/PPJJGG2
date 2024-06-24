@@ -18,7 +18,7 @@ MonoBehaviour:
     facingLeft: 0
   Right:
     charName: Trevis
-    cha: {fileID: 0}
+    cha: {fileID: 237586846827537425, guid: d4c66ff06965e9749a2f2577bc8b20df, type: 3}
     facingLeft: 1
   isLeftSpeaking: 1
   timeBetweenCharacters: 0.1
