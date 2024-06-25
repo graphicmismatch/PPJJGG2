@@ -8,7 +8,7 @@ public class PlayerManager : MonoBehaviour
     public PlayerMovement playerB;
     public Transform playerAinit;
     public Transform playerBinit;
-
+    public AudioClip switchP;
     public float playerAcamZ;
     public float playerBcamZ;
     public float playerAcamY;
@@ -58,6 +58,7 @@ public class PlayerManager : MonoBehaviour
                 playerA.rb.velocityX = 0;
             }
             inputlatch = false;
+            AudioSource.PlayClipAtPoint(switchP, this.transform.position);
         }
         else if (!ctx.ReadValueAsButton()) {
             inputlatch = true;

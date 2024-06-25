@@ -239,6 +239,7 @@ MonoBehaviour:
   playerB: {fileID: 2814421321386088372}
   playerAinit: {fileID: 5222430109825296676}
   playerBinit: {fileID: 5601900564634019750}
+  switchP: {fileID: 8300000, guid: ef63a8eb3258bc14ebe534b6a0027960, type: 3}
   playerAcamZ: -10
   playerBcamZ: -10
   playerAcamY: -19

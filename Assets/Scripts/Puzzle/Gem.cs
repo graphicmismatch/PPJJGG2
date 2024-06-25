@@ -11,6 +11,7 @@ public class Gem : MonoBehaviour
     public Transform leader;
     public float followSharpness = 0.05f;
     public Vector2 offset;
+    public AudioClip pick;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +30,7 @@ public class Gem : MonoBehaviour
                         cd.otherTransform.GetComponent<PlayerMovement>().hasGem = true;
                         cd.otherTransform.GetComponent<PlayerMovement>().g = this;
                         gs = GemState.FOLLOW;
+                        AudioSource.PlayClipAtPoint(pick, this.transform.position);
                     }
                 }
                 break;

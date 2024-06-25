@@ -2742,6 +2742,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4761253928761923367, guid: 7627395ec3d89b04c9f2e4e9b4744985, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 450885144856806013, guid: dd6992eb1c6a5a44b9d6aaa6d78ed9d1, type: 3}
+    - target: {fileID: 4761253928761923367, guid: 7627395ec3d89b04c9f2e4e9b4744985, type: 3}
       propertyPath: m_SortingLayer
       value: 7
       objectReference: {fileID: 0}
@@ -18405,6 +18409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gem
       objectReference: {fileID: 0}
+    - target: {fileID: 7576964198670002040, guid: 27df78d8d29e6d14ba908771e2ff96b5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3854524118219451006, guid: dd6992eb1c6a5a44b9d6aaa6d78ed9d1, type: 3}
     - target: {fileID: 7576964198670002040, guid: 27df78d8d29e6d14ba908771e2ff96b5, type: 3}
       propertyPath: m_SortingLayer
       value: 7
@@ -36364,22 +36372,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 893963667}
     m_Modifications:
-    - target: {fileID: 2190927109771084745, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 2190927109771084745, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -20.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2840760163434701116, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: m_Name
-      value: WinTileRed
-      objectReference: {fileID: 0}
-    - target: {fileID: 5007366436864826835, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: otherTransform
+    - target: {fileID: 2465060617122156628, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1837804360737770656, guid: 44c1dfa7a451a694d8cf6e47e0d89f02, type: 3}
     - target: {fileID: 5144483868721785932, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -36424,58 +36420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinTileManager
       objectReference: {fileID: 0}
-    - target: {fileID: 6294461832245217882, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: m_Name
-      value: WinTileBlue
-      objectReference: {fileID: 0}
-    - target: {fileID: 7806824518337235484, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: otherTransform
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7982357857777309192, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: m_FlipY
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8324842674191775720, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 8324842674191775720, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: win.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1262629480}
-    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: changeStatic
-      objectReference: {fileID: 0}
-    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneChan, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8797417599910441502, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
-      propertyPath: win.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -28710,12 +28710,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2190927109771084745, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16
+      value: 15.93
       objectReference: {fileID: 0}
     - target: {fileID: 2190927109771084745, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20.5
+      value: -19.89
       objectReference: {fileID: 0}
+    - target: {fileID: 2465060617122156628, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6524083182270439563, guid: 44c1dfa7a451a694d8cf6e47e0d89f02, type: 3}
     - target: {fileID: 2465060617122156628, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_SortingLayer
       value: 7

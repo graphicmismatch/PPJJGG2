@@ -12,6 +12,8 @@ public class ButtonPressManager : MonoBehaviour
     [SerializeField] private Sprite offSprite;
     [SerializeField] private Sprite onSprite;
 
+    public AudioClip audOn;
+    public AudioClip audOff;
     private bool _isActive;
 
     public UnityEvent<bool> buttonActivationChange;
@@ -36,6 +38,7 @@ public class ButtonPressManager : MonoBehaviour
 
         _isActive = true;
         spriteRenderer.sprite = onSprite;
+        AudioSource.PlayClipAtPoint(audOn,this.transform.position);
         buttonActivationChange.Invoke(_isActive);
     }
 
@@ -45,6 +48,7 @@ public class ButtonPressManager : MonoBehaviour
 
         _isActive = false;
         spriteRenderer.sprite = offSprite;
+        AudioSource.PlayClipAtPoint(audOff, this.transform.position);
         buttonActivationChange.Invoke(_isActive);
     }
 }

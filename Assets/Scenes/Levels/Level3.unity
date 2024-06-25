@@ -2837,7 +2837,7 @@ GameObject:
   - component: {fileID: 916367383}
   - component: {fileID: 916367382}
   - component: {fileID: 916367381}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundTilemapBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21008,7 +21008,7 @@ GameObject:
   - component: {fileID: 2008215257}
   - component: {fileID: 2008215256}
   - component: {fileID: 2008215255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GroundTilemapRed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36338,12 +36338,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2190927109771084745, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16
+      value: 16.05
       objectReference: {fileID: 0}
     - target: {fileID: 2190927109771084745, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20.5
+      value: -19.91
       objectReference: {fileID: 0}
+    - target: {fileID: 2465060617122156628, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1837804360737770656, guid: 44c1dfa7a451a694d8cf6e47e0d89f02, type: 3}
     - target: {fileID: 2840760163434701116, guid: 02fd0618944fa7c4186e3a3ca9855c50, type: 3}
       propertyPath: m_Name
       value: WinTileRed
